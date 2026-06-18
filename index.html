@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Chasse au trésor ❤️</title>
+
+<style>
+body{
+    font-family: Arial;
+    text-align:center;
+    margin-top:100px;
+}
+input{
+    padding:10px;
+    font-size:18px;
+}
+button{
+    padding:10px 20px;
+    font-size:18px;
+}
+#resultat{
+    margin-top:30px;
+    font-size:25px;
+    font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<h1>🔎 Première énigme</h1>
+
+<p>
+Je suis toujours devant toi, mais tu ne peux jamais m'atteindre.<br>
+Qui suis-je ?
+</p>
+
+<input id="code">
+
+<button onclick="verifier()">Valider</button>
+
+<div id="resultat"></div>
+
+<script>
+
+function verifier(){
+
+let code = document.getElementById("code").value.toLowerCase();
+
+if(code=="futur"){
+    document.getElementById("resultat").innerHTML="🎉 Bravo ❤️";
+}
+else{
+    document.getElementById("resultat").innerHTML="❌ Try again";
+}
+
+}
+
+</script>
+
+</body>
+</html>
