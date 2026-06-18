@@ -2,22 +2,51 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<title>Chasse au trésor ❤️</title>
+<title>Chasse au trésor de Malika</title>
 
 <style>
 body{
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     text-align:center;
-    margin-top:100px;
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(135deg, #ffdde1, #ee9ca7);
 }
+
+.card{
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+    width:80%;
+    max-width:500px;
+}
+
 input{
     padding:10px;
     font-size:18px;
+    width:80%;
+    margin-top:10px;
 }
+
 button{
     padding:10px 20px;
     font-size:18px;
+    margin-top:15px;
+    cursor:pointer;
+    border:none;
+    border-radius:10px;
+    background:#ff6b81;
+    color:white;
 }
+
+button:hover{
+    background:#ff4d6d;
+}
+
 #resultat{
     margin-top:30px;
     font-size:25px;
@@ -28,18 +57,24 @@ button{
 
 <body>
 
-<h1>🔎 Première énigme</h1>
+<div class="card">
+
+<h1>🔎 Chasse au trésor de Malika</h1>
 
 <p>
 Je suis toujours devant toi, mais tu ne peux jamais m'atteindre.<br>
 Qui suis-je ?
 </p>
 
-<input id="code">
+<input id="code" placeholder="Ta réponse...">
+
+<br>
 
 <button onclick="verifier()">Valider</button>
 
 <div id="resultat"></div>
+
+</div>
 
 <script>
 
